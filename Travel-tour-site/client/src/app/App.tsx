@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import { LoginPage } from "@pages/LoginPage/ui/LoginPage";
 import "./App.css";
 
 interface DataResponse {
   message: string;
 }
 
-function App() {
+export const App = () => { // or function App()
+  <LoginPage />;
   const [data, setData] = useState<string>('');
 
   useEffect(() => {
@@ -24,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+
