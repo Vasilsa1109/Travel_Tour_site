@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { LoginPage } from "@pages/LoginPage/ui/LoginPage";
+import { Header } from '@widgets/ui/Header/Header';
+import { Outlet } from 'react-router-dom';
 import "./App.css";
 
 interface DataResponse {
   message: string;
 }
 
-export const App = () => { // or function App()
-  <LoginPage />;
+export const App = ()  => {
   const [data, setData] = useState<string>('');
 
   useEffect(() => {
@@ -20,11 +18,11 @@ export const App = () => { // or function App()
 
   return (
     <>
-      <h1>Backend response: {data}</h1>
+    <Header />
+    <main>
+      <h1>Home</h1>
+      <Outlet />
+    </main>
     </>
   );
 }
-
-export default App;
-
-
