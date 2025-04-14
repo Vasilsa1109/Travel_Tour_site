@@ -7,7 +7,7 @@ interface DataResponse {
   message: string;
 }
 
-export const App = ()  => {
+export const App = () => {
   const [data, setData] = useState<string>('');
 
   useEffect(() => {
@@ -18,11 +18,18 @@ export const App = ()  => {
 
   return (
     <>
-    <Header />
-    <main>
-      <h1>Home</h1>
-      <Outlet />
-    </main>
+      <Header />
+      <main>
+        <h1>Home</h1>
+        <div className="main_block">
+          <h1>TOUR & TRAVEL</h1>
+          <img src="https://revelo.vercel.app/assets/images/hero/hero.jpg" alt="" id="hero" />
+        </div>
+        <h3>Discover the World's Treasures with Ravelo <br />
+          One site <button>34,500 </button>most popular experience you’ll remember</h3>
+
+        <Outlet />
+      </main>
     </>
   );
 }

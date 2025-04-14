@@ -9,11 +9,11 @@ html, body {
   font-family: 'Sour Gummy';
   font-style: normal;
   font-weight: 400;
-  background-color: #2e3b51;
+  background-color: #198754; 
 }
 
 h3:hover{
-  background-color: #55637f;
+  background-color: #5b8349;;
   padding: 15px;
   transition: background-color 5s ease-out;
 } 
@@ -32,3 +32,7 @@ h3:hover{
   }
 }
 
+#hero{
+  width: 80%;
+  height: auto;
+}
