@@ -1,9 +1,9 @@
 html, body{
     position: relative;
 }
-header{
+header {
     width: 100%;
-    height: 80px;
+    height: 100px;
     position: absolute;
     left: 0;
     top: 0;
@@ -11,16 +11,30 @@ header{
     background-color: #2d4638;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+}
+header div{
+    margin-top: 10px;
 }
 nav{
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 40px;
+    background-color: #202c25;
+    height: 35px;
+    border-radius: 7px;
+    padding: 5px;
+}
+nav a:hover{
+   background-color: rgb(60, 95, 56);
+   border-radius: 7px;
+   color: aliceblue;
+   padding: 3px;
 }
 #logo{
     position: absolute;
     left: 30px;
-    width: 110px;
-    height: 40px;
+    aspect-ratio: 1/1;
+    width: 75px;
 }

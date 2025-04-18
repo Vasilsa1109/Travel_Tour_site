@@ -4,18 +4,21 @@
   padding: 2rem;
   text-align: center;
 }
-
-html, body {
+ 
+ html, body {
   font-family: 'Sour Gummy';
   font-style: normal;
   font-weight: 400;
   background-color: #198754; 
-}
+} 
 
+main{
+  padding-top: 30px;
+}
 h3:hover{
-  background-color: #5b8349;;
+  background-color: #5b8349;
   padding: 15px;
-  transition: background-color 5s ease-out;
+  transition: background-color 2s ease-out;
 } 
 
  h3{
@@ -33,6 +36,7 @@ h3:hover{
 }
 
 #hero{
-  width: 80%;
+  width: 90%;
   height: auto;
+  border-radius: 15px;
 }

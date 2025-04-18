@@ -26,7 +26,7 @@ export const App = () => {
           <img src="https://revelo.vercel.app/assets/images/hero/hero.jpg" alt="" id="hero" />
         </div>
         <h3>Discover the World's Treasures with Ravelo <br />
-          One site <button>34,500 </button>most popular experience you’ll remember</h3>
+          One site  <button> 34,500 </button> most popular experience you’ll remember</h3>
 
         <Outlet />
       </main>

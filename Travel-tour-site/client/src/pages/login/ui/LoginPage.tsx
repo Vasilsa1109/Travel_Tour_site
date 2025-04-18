@@ -1,4 +1,5 @@
 import { LoginForm } from "@shared/ui/LoginForm";
+import '@pages/login/ui/LoginPage.css'
 export const LoginPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
