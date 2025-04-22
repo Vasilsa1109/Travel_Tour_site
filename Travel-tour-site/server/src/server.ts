@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-
+// import { Product } from '../models/Products';
+// import { sequelize } from '../shared/db/sequelize';
+// import reviewRoutes from '@/entities/review/routes/review.routes';
 const app = express();
 const port = 3001;
 
@@ -34,7 +36,10 @@ app.post('/api/login', (req, res) => {
     res.status(401).json({ message: 'Неверный email или пароль' });
   }
 });
-
+// app.use('/api/reviews', reviewRoutes);
+// sequelize.sync().then(() => {
+//   console.log('📦 DB connected & models synced');
+// });
 
 app.listen(port, () => {
   console.log(`Сервер запущен на http://localhost:${port}`);
