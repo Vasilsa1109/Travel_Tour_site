@@ -1,0 +1,7 @@
+{
+    "watch": ["server.ts", "app", "entities", "shared"],
+    "ext": "ts",
+    "exec": "ts-node server.ts",
+    "ignore": ["node_modules"]
+  }
+  
