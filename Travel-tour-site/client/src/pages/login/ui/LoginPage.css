@@ -1,6 +1,39 @@
-   /* body {background: linear-gradient(-45deg,
-  rgba(0, 0, 0, 0) 50%, 
-  #198754 50%, #28332e 60%, 
-      rgba(0, 0, 0, 0) 60%
-      );
-  background-size: 3em 3em;}  */
+body {
+  background: linear-gradient(
+    -45deg,
+    rgba(60, 133, 69, 0) 50%,
+    #198754 50%,
+    #36af79 60%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  background-size: 4em 4em;
+}
+
+.login__block{
+    background-color: #266d54;
+    padding: 15px;
+    width: 800px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.login__form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input{
+    height: 35px;
+    font-size: 25px;
+    outline: none;
+    border-radius: 10px;
+}
+
+label{
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 2em;
+}

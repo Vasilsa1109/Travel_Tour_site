@@ -3,7 +3,7 @@
       "target": "ES2020", 
       "module": "ESNext",
       "moduleResolution": "Node",            
-      "rootDir": "src",             
+      "rootDir": ".",             
       "outDir": "dist",  //папка создается для дальнейшего деплоя-сборки приложения                  
       "strict": true,                
       "esModuleInterop": true,       
@@ -11,6 +11,6 @@
       "forceConsistentCasingInFileNames": true, 
       "resolveJsonModule": true
     },
-    "include": ["src/**/*.ts", "server.ts"],      
+    "include": ["**/*.ts", "server.ts"],      
     "exclude": ["node_modules"]     
   }

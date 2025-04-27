@@ -1,12 +1,13 @@
-import { Review } from '../../../models/Reviews';
+
+import { Review } from "../models/Reviews"; 
 
 export const reviewService = {
   async getAll() {
-    return await Review.findAll(); //все записи
+    return await Review.findAll();
   },
 
   async getById(id: number) {
-    return await Review.findByPk(id); //pk - primary key
+    return await Review.findByPk(id);
   },
 
   async create(data: any) {

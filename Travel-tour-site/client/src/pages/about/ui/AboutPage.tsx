@@ -1,5 +1,5 @@
 import { Header } from '@widgets/ui/Header/Header';
-import '@pages/about/ui/AboutPage.css'
+import './AboutPage.css'
 import '../../../../src/index.css'
 import { Button } from '@shared/ui/Button';
 export const AboutPage = () => {
@@ -24,7 +24,7 @@ export const AboutPage = () => {
                         <div className="description__specializing">
                             <p>We specialize in crafting unforgettable city experiences for travelers seeking discover the heart and soul of urban landscapes.
                                 <br />Our expertly guided tours take journey through vibrant streets, historic landmarks, and hidden gems of each city.</p>
-                            <ul>
+                            <ul className='specializing'>
                                 <li>Experience Agency</li>
                                 <li>Professional Team</li>
                                 <li>Low Cost Travel</li>

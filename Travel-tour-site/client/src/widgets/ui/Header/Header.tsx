@@ -1,10 +1,15 @@
-import { Link } from 'react-router-dom';
-import '@widgets/ui/Header/Header.css'
+import { Link } from "react-router-dom";
+import "./Header.css";
+import { Button } from "@shared/ui/Button";
 export const Header = () => {
   return (
     <header className="CLASS__NAME">
       <div className="CLASS__NAME">
-        <img src="https://cdn-icons-png.flaticon.com/512/5333/5333722.png" alt="" id='logo'/>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5333/5333722.png"
+          alt=""
+          id="logo"
+        />
         <Link to="/" className="CLASS__NAME">
           Main page of my app
         </Link>
@@ -29,6 +34,11 @@ export const Header = () => {
           </Link>
         </nav>
       </div>
+      <Button id="booking">
+        <Link to="/contact" className="CLASS__NAME">
+          BOOK NOW ↗
+        </Link>
+      </Button>
     </header>
   );
 };

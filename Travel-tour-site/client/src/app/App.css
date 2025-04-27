@@ -16,14 +16,14 @@ main{
   padding-top: 30px;
 }
 h3:hover{
-  background-color: #5b8349;
-  padding: 15px;
-  transition: background-color 2s ease-out;
+  background-color: #292f2a;
+  transition: background-color 0.7s ease-in-out;
 } 
 
  h3{
   text-transform: uppercase;
   font-size: 2em;
+  padding: 10px;
 } 
 
 @keyframes animate {
