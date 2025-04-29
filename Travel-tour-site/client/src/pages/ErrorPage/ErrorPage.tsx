@@ -1,5 +1,6 @@
 import "./ErrorPage.css";
 import { Header } from "@widgets/ui/Header/Header";
+import { Footer } from "@widgets/ui/Footer/Footer";
 import { Button } from "@shared/ui/Button";
 export const ErrorPage = () => {
   return (
@@ -28,6 +29,7 @@ export const ErrorPage = () => {
         <Button><a href="blog">Fishing</a></Button>
         </div>
       </main>
+      <Footer></Footer>
     </>
   );
 };

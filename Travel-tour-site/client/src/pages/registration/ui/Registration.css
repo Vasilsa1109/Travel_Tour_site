@@ -1,0 +1,30 @@
+.registration {
+    background-color: #266d54;
+    border-radius: 10px;
+    padding: 50px;
+}
+.registration button{
+    margin-top: 30px;
+}
+.registration h1 {    
+    overflow: hidden;
+    font-size: 8rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://st2.depositphotos.com/10064350/47432/i/450/depositphotos_474325920-stock-photo-abstract-colorful-pattern-background-creative.jpg'); 
+    background-size: 200%; 
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 10s infinite alternate linear;
+  }
+
+  @keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}

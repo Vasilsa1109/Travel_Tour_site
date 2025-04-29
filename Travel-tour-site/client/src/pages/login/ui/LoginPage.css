@@ -1,14 +1,3 @@
-body {
-  background: linear-gradient(
-    -45deg,
-    rgba(60, 133, 69, 0) 50%,
-    #198754 50%,
-    #36af79 60%,
-    rgba(0, 0, 0, 0) 60%
-  );
-  background-size: 4em 4em;
-}
-
 .login__block{
     background-color: #266d54;
     padding: 15px;
@@ -36,4 +25,7 @@ label{
   margin-right: 10px;
   font-weight: 600;
   font-size: 2em;
+}
+h1{
+  margin-bottom: 20px;
 }

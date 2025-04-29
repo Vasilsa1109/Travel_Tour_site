@@ -1,4 +1,12 @@
-.circle{
+.description{
+    background-color: #2e3b15;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.circle {
     background-color: aliceblue;
     width: 180px;
     aspect-ratio: 1/1;
@@ -11,7 +19,8 @@
     gap: 0px;
     position: relative;
 }
-.circle button{
+
+.circle button {
     position: absolute;
     top: 20px;
     right: -20px;
@@ -19,52 +28,75 @@
     background-color: #a34316;
     transform: rotate(30deg);
 }
-h5{
+
+.circle h5 {
     position: absolute;
     left: 30px;
     top: 20px;
 }
-.circle b{
+
+.circle b {
     font-size: 5em;
     text-align: center;
 }
-.specializing li{
+
+.specializing li {
     background-color: rgb(53, 136, 64);
 }
-.specializing li::before{
+.specializing button{
+    margin-top: 20px;
+}
+.specializing li::before {
     list-style-position: inside;
 }
+
 .specializing li::marker {
     --image: '📩 ';
-    content:  var(--image);
+    content: var(--image);
 }
-ul{
+
+ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
 }
-.block{
+
+.block {
     background-color: #6b4f30;
     color: aliceblue;
     border-radius: 10px;
 }
-.block img{
+
+.block img {
     width: 50px;
     aspect-ratio: 1/1;
 }
 
-.company{
+.company {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     gap: 30px;
 }
-.sub-block{
+
+.sub-block {
     background-color: rgb(70, 50, 25);
 }
-#reward{
+
+#reward {
     margin-top: 30px;
 }
-b{
+
+b {
     color: black;
+}
+
+.tour-guides {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    gap: 30px;
+}
+.guide img{
+    border-radius: 10px;
 }

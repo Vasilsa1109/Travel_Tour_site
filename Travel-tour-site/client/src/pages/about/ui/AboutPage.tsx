@@ -1,7 +1,9 @@
 import { Header } from '@widgets/ui/Header/Header';
+import { Footer } from '@widgets/ui/Footer/Footer';
 import './AboutPage.css'
 import '../../../../src/index.css'
 import { Button } from '@shared/ui/Button';
+import { TravelGuide } from '@shared/ui/TravelGuide';
 export const AboutPage = () => {
     return (
         <>
@@ -37,14 +39,14 @@ export const AboutPage = () => {
                         <img src="https://revelo.vercel.app/assets/images/about/about-feature1.jpg" alt="" />
                         <img src=" https://revelo.vercel.app/assets/images/about/about-feature2.jpg" alt="" />
                         <div className="block">
-                            <img src="https://www.freeiconspng.com/uploads/travel-guide-icon-map-ticket-travel-icon-17.png" alt=""  />
+                            <img src="https://www.freeiconspng.com/uploads/travel-guide-icon-map-ticket-travel-icon-17.png" alt="" />
                             <h2>We Are Award Winning Company</h2>
                             <h4>At Pinnacle Business Solutions commitment to excellence and innovation earned</h4>
                             <div className="sub-block">
-                            <img src="https://www.freeiconspng.com/uploads/badge-certificate-medal-quality-reward-icon--3.png" alt="" id='reward'/>
-                            <h2>5000+ Popular tour destinations</h2>
-                            <h4>Our team of experts is dedicate developing cutting-edge strategies drive success</h4></div>
-                        </div>   
+                                <img src="https://www.freeiconspng.com/uploads/badge-certificate-medal-quality-reward-icon--3.png" alt="" id='reward' />
+                                <h2>5000+ Popular tour destinations</h2>
+                                <h4>Our team of experts is dedicate developing cutting-edge strategies drive success</h4></div>
+                        </div>
                     </div>
                     <div className="reasons">
                         <h2>Travel with Confidence Top Reasons to Choose Our Agency</h2>
@@ -60,20 +62,20 @@ export const AboutPage = () => {
                         </div>
                         <Button>Explore destinations →</Button>
                     </div>
+                    <h2>Meet Our Experience Travel Guides</h2>
+                    <h3>One site <Button>34,500</Button> most popular experience you’ll remember</h3>
                     <div className="tour-guides">
-                        <h2>Meet Our Experience Travel Guides</h2>
-                        <h3>One site <Button>34,500</Button> most popular experience you’ll remember</h3>
-                        <div className="guide">
-                            <img src="https://revelo.vercel.app/assets/images/team/guide1.jpg" alt="" />
-                            John L. Simmons
-                            Co-founder
-                        </div>
+                        <TravelGuide imgSrc='https://revelo.vercel.app/assets/images/team/guide1.jpg' guide='John L. Simmons' designation='Co-founder' />
+                        <TravelGuide imgSrc='https://revelo.vercel.app/assets/images/team/guide2.jpg' guide='Andrew K. Manley' designation='Senior Guide' />
+                        <TravelGuide imgSrc='https://revelo.vercel.app/assets/images/team/guide3.jpg' guide='Drew J. Bridges' designation='Travel Guide' />
+                        <TravelGuide imgSrc='https://revelo.vercel.app/assets/images/team/guide4.jpg' guide='Byron F. Simpson' designation='Travel Guide' />
                     </div>
                     <div className="benefit">
                         <img src="https://revelo.vercel.app/assets/images/video/shape1.png" alt="" />
                     </div>
                 </div>
             </main>
+            <Footer></Footer>
         </>
     )
 }
