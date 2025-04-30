@@ -1,8 +1,17 @@
 
-import { DataTypes } from 'sequelize';
+import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '../../../shared/db/sequelize';
 
-export const Product = sequelize.define('Product', {
+export interface ProductData {
+  id: number,
+  name: string,
+  description: string,
+  quantity: number,
+  price: string,
+  discount_price: string
+}
+
+export const Product = sequelize.define<Model<ProductData>>('Product', {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,

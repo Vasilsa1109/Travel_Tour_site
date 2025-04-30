@@ -1,0 +1,9 @@
+.exploring, .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+.exploring{
+    background-color: rgb(35, 55, 82);
+    width: max-content;
+}

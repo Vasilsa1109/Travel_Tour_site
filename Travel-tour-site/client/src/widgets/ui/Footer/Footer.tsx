@@ -30,7 +30,7 @@ export const Footer = () => {
               width="400"
               height="300"
               loading="lazy">
-            </iframe> 
+            </iframe>
             <div className="items">
               {instagramItems.map((item, index) => (
                 <InstagramItem key={index} {...item} />
@@ -139,8 +139,8 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
+          <img src="https://revelo.vercel.app/assets/images/backgrounds/footer-two.png" alt="" id="last-footer-img" />
         </div>
-        <img src="https://revelo.vercel.app/assets/images/backgrounds/footer-two.png" alt="" />
       </div>
     </footer>
   );

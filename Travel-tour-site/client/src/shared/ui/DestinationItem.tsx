@@ -22,9 +22,9 @@ export const DestinationItem: FC<DestinationItemProps> = ({
         <img src={imgSrc} alt={title}/>
       </div>
       <div className="content">
-        <h3>
+        <h4>
           {title}
-        </h3>
+        </h4>
         {tours && <span className="time">{tours}</span>}
         {children}
       </div>

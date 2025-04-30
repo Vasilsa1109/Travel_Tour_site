@@ -24,10 +24,10 @@ footer {
 }
 
 .line, .items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin-bottom: 20px;
 }
 
 li {
@@ -38,4 +38,7 @@ li {
   width: 200px;
   height: 200px;
   border-radius: 5px;
+}
+#last-footer-img{
+  width: 80%;
 }

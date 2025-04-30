@@ -1,10 +1,17 @@
-import { DataTypes } from 'sequelize';
+
+import { DataTypes, Model } from 'sequelize';
 import { sequelize } from '../../../shared/db/sequelize';
 import { User } from '../../user/models/User';
-// import { sequelize } from '../../../shared/db/sequelize';
-// import { User } from '../../user/models/User';
 
-export const Review = sequelize.define('Review', {
+export interface ReviewData {
+  id: number;
+  user_id: number;
+  name: string;
+  description: string;
+  value: number;
+}
+
+export const Review = sequelize.define<Model<ReviewData>>('Review', {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
