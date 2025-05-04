@@ -8,6 +8,7 @@ import { LoginPage } from '@pages/login/ui/LoginPage'
 import { AboutPage } from '@pages/about/ui/AboutPage'
 import { ErrorPage } from '@pages/ErrorPage/ErrorPage'
 import { Contact } from '@pages/contact/Contact'
+import { DestinationsPage } from '@pages/destinations/ui/DestinationsPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/login" element={<LoginPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/destinations" element={<DestinationsPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
   </BrowserRouter>

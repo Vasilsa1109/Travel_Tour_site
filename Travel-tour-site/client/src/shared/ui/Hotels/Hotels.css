@@ -1,0 +1,18 @@
+.hotels{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #161a17;
+    width: 100%;
+    padding: 40px;
+}
+.destination-card {
+    flex-direction: row;
+    gap: 30px;
+}
+.subblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}

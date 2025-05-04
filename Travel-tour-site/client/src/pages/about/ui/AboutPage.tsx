@@ -4,6 +4,7 @@ import './AboutPage.css'
 import '../../../../src/index.css'
 import { Button } from '@shared/ui/Button';
 import { TravelGuide } from '@shared/ui/TravelGuide';
+import { Hotels } from '@shared/ui/Hotels/Hotels';
 export const AboutPage = () => {
     return (
         <>
@@ -74,6 +75,7 @@ export const AboutPage = () => {
                         <img src="https://revelo.vercel.app/assets/images/video/shape1.png" alt="" />
                     </div>
                 </div>
+                <Hotels />
             </main>
             <Footer></Footer>
         </>

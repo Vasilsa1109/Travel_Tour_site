@@ -16,7 +16,7 @@ export const HomePage = () => {
       </div>
       <div className="discover">
         <h3>
-          Discover the World's Treasures with Ravelo <br />
+          Discover the World's Treasures with us <br />
           One site <Button> 34,500 </Button> most popular experience you’ll
           remember
         </h3>

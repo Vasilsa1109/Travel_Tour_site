@@ -1,0 +1,18 @@
+.mini-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+   
+}
+.mini-card{
+    background-color: #1e5c3f; 
+    padding: 20px;
+}
+.mini-card img{
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    width: 170px;
+    aspect-ratio: 1/1;
+}

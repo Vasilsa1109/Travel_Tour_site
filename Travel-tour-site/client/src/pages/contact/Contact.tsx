@@ -1,3 +1,4 @@
+import { Hotels } from "@shared/ui/Hotels/Hotels";
 import "./Contact.css";
 import { Header } from "@widgets/ui/Header/Header";
 export const Contact = () => {
@@ -31,6 +32,7 @@ export const Contact = () => {
           </div>
           </div>
           </div>
+          <Hotels />
       </main>
     </>
   );

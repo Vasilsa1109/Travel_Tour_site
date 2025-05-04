@@ -15,10 +15,10 @@
 .ratting{
     background: #cbffbe;
     width: max-content;
-    padding: 3px;
     color: rgb(0, 0, 0);
     rotate: -25deg;
     position: absolute;
+    top: 20px;
 }
 .icon__img{
     width: 30px;
