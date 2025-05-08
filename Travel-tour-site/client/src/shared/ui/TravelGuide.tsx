@@ -14,8 +14,9 @@ export const TravelGuide: FC<TravelGuideProps> = ({
     return (
         <div className="guide">
            <img src={imgSrc} alt="" />
-            {guide}
-            {designation}
+            <p>{guide}</p>
+            <br />
+            <p>{designation}</p>
         </div>
     );
 };

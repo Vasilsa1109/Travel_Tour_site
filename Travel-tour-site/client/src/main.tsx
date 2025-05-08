@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { App } from '@app/App'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Provider } from 'react-redux';
+import { store } from '@shared/store';
 import RegistrationPage from '@pages/registration/ui/RegistrationPage'
 import { LoginPage } from '@pages/login/ui/LoginPage'
 import { AboutPage } from '@pages/about/ui/AboutPage'
@@ -12,8 +14,9 @@ import { DestinationsPage } from '@pages/destinations/ui/DestinationsPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
         <Route path="/" element={<App />} />
         <Route path="/registration" element={<RegistrationPage />} />
         <Route path="/login" element={<LoginPage />} />
@@ -21,7 +24,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/destinations" element={<DestinationsPage />} />
         <Route path="*" element={<ErrorPage />} />
-      </Routes>
-  </BrowserRouter>
-  </StrictMode>,
-)
+        </Routes>
+      </BrowserRouter>
+    </Provider>
+  </StrictMode>
+);

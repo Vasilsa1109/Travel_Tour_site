@@ -3,6 +3,7 @@ import { Header } from "@widgets/ui/Header/Header";
 import { Footer } from "@widgets/ui/Footer/Footer";
 import { MiniCard } from "@shared/ui/DestinationMiniCard";
 import { Hotels } from "@shared/ui/Hotels/Hotels";
+import { ProductCard } from "@entities/product/ui/ProductCard";
 export const DestinationsPage = () => {
     return (
         <>
@@ -19,6 +20,10 @@ export const DestinationsPage = () => {
                     <MiniCard imgSrc="https://revelo.vercel.app/assets/images/destinations/destination-five8.jpg" country="Wroclaw, Poland" tours={34} />
                     <MiniCard imgSrc="https://revelo.vercel.app/assets/images/destinations/destination-five10.jpg" country="Antalya, Turkey" tours={298} />
                 </div>
+                {/* в каталоге можно использовать по примеру: 
+<ProductCard product={product} onClick={() => navigate(/product/${product.id})} />
+в корзине
+<ProductCard product={product} showQuantity={false} showDiscount={false} /> */}
                 <Hotels />
             </main>
             <Footer></Footer>

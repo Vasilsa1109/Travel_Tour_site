@@ -2,10 +2,26 @@ import "./HomePage.css";
 import { Button } from "@shared/ui/Button";
 import { Card } from "@shared/ui/Card";
 import { DestinationItem } from "@shared/ui/DestinationItem";
-export const HomePage = () => {
+import { WeatherInfo } from "@shared/ui/WeatherInfo";
+import { useSelector } from 'react-redux';
+import { RootState } from '@shared/store';
+
+interface WeatherInfoProps {
+  city: string;
+}
+
+export const HomePage = ({ city }: WeatherInfoProps) => { 
+  const user = useSelector((state: RootState) => state.user.user);
   return (
     <>
       <h1>Home</h1>
+    <div>
+      {user ? (
+        <p>Привет, {user.name}!</p>
+      ) : (
+        <p>Вы не вошли в систему</p>
+      )}
+    </div>
       <div className="main_block">
         <h1>TOUR & TRAVEL</h1>
         <img
@@ -20,6 +36,8 @@ export const HomePage = () => {
           One site <Button> 34,500 </Button> most popular experience you’ll
           remember
         </h3>
+        <h2>Explore weather</h2>
+        <WeatherInfo city="Рим" />
         <div className="cards">
           <Card
             rating={'4.9'}
