@@ -7,3 +7,11 @@
     background-color: rgb(35, 55, 82);
     width: max-content;
 }
+.weather{
+    background-color: #465f43;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.weather__card{
+    border: 5px solid  rgb(98, 133, 94)
+}

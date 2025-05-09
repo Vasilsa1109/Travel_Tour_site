@@ -2,26 +2,22 @@ import "./HomePage.css";
 import { Button } from "@shared/ui/Button";
 import { Card } from "@shared/ui/Card";
 import { DestinationItem } from "@shared/ui/DestinationItem";
-import { WeatherInfo } from "@shared/ui/WeatherInfo";
+import { WeatherInfo } from "../../WeatherInfo";
 import { useSelector } from 'react-redux';
 import { RootState } from '@shared/store';
 
-interface WeatherInfoProps {
-  city: string;
-}
-
-export const HomePage = ({ city }: WeatherInfoProps) => { 
+export const HomePage = () => {
   const user = useSelector((state: RootState) => state.user.user);
   return (
     <>
       <h1>Home</h1>
-    <div>
-      {user ? (
-        <p>Привет, {user.name}!</p>
-      ) : (
-        <p>Вы не вошли в систему</p>
-      )}
-    </div>
+      <div>
+        {user ? (
+          <p>Привет, {user.name}!</p>
+        ) : (
+          <p>Вы не вошли в систему</p>
+        )}
+      </div>
       <div className="main_block">
         <h1>TOUR & TRAVEL</h1>
         <img
@@ -36,8 +32,19 @@ export const HomePage = ({ city }: WeatherInfoProps) => {
           One site <Button> 34,500 </Button> most popular experience you’ll
           remember
         </h3>
-        <h2>Explore weather</h2>
-        <WeatherInfo city="Рим" />
+        <h2>Explore weather in popular destinations:</h2>
+        <div className="weather">
+          <WeatherInfo city="Доха" />
+          <WeatherInfo city="Москва" />
+          <WeatherInfo city="Дубай" />
+          <WeatherInfo city="Рим" />
+          <WeatherInfo city="Париж" />
+          <WeatherInfo city="Мадрид" />
+          <WeatherInfo city="Стамбул" />
+          <WeatherInfo city="Лондон" />
+          <WeatherInfo city="Берлин" />
+           <WeatherInfo city="Бангкок" />
+        </div>
         <div className="cards">
           <Card
             rating={'4.9'}
@@ -48,7 +55,7 @@ export const HomePage = ({ city }: WeatherInfoProps) => {
             price={'69.50'}
             onBookClick={() => alert("Booking clicked")}
           />
-           <Card
+          <Card
             rating={'4.8'}
             imgSrc="https://revelo.vercel.app/assets/images/destinations/visiting-place2.jpg"
             location=" Wildest, Italy"
@@ -69,13 +76,13 @@ export const HomePage = ({ city }: WeatherInfoProps) => {
         </div>
       </div>
       <p>Explore Popular Destinations</p>
-      <div className="exploring"> 
+      <div className="exploring">
         <DestinationItem
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination1.jpg"
           title="Thailand beach"
           tours="5352+ tours & 856+ Activity"
-        /> 
-         <DestinationItem
+        />
+        <DestinationItem
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination3.jpg"
           title="Castellammare del Golfo, Italy"
           tours="5352+ tours & 856+ Activity"
