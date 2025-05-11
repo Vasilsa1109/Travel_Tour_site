@@ -7,6 +7,16 @@ interface WeatherInfoProps {
 export const WeatherInfo = ({ city }: WeatherInfoProps) => {
   const [temp, setTemp] = useState<number | null>(null);
   const [icon, setIcon] = useState<string | null>(null);
+  const [pressure, setPressure] = useState<number | null>(null);
+  const [humidity, setHumidity] = useState<number | null>(null);
+  const [sunrise, setSunrise] = useState<number | null>(null);
+  const [sunset, setSunset] = useState<number | null>(null);
+  const [feelsLike, setFeelsLike] = useState<{
+    day: number;
+    night: number;
+    eve: number;
+    morn: number;
+  } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -23,21 +33,27 @@ export const WeatherInfo = ({ city }: WeatherInfoProps) => {
         if (res.ok) {
           setTemp(data.main.temp);
           setIcon(data.weather[0].icon);
+          setPressure(data.main.pressure);
+          setHumidity(data.main.humidity);
+          setSunrise(data.sys.sunrise);
+          setSunset(data.sys.sunset);
+          setFeelsLike(data.main.feels_like);
           setError(null);
         } else {
           setError(data.message);
-          setTemp(null);
-          setIcon(null);
         }
       } catch (e) {
         setError('Ошибка загрузки погоды');
-        setTemp(null);
-        setIcon(null);
       }
     };
 
     fetchWeather();
   }, [city]);
+
+  const formatTime = (timestamp: number) => {
+    const date = new Date(timestamp * 1000);
+    return date.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+  };
 
   if (error) return <p className="text-red-500 text-sm">{error}</p>;
   if (temp === null) return <p className="text-gray-400 text-sm">Загрузка погоды...</p>;
@@ -52,6 +68,18 @@ export const WeatherInfo = ({ city }: WeatherInfoProps) => {
         />
       )}
       <span>{city}: {temp.toFixed(1)}°C</span>
+      {pressure !== null && <p>Давление: {pressure} гПа</p>}
+      {humidity !== null && <p>Влажность: {humidity}%</p>}
+      {sunrise !== null && <p>Восход солнца: {formatTime(sunrise)}</p>}
+      {sunset !== null && <p>Закат солнца: {formatTime(sunset)}</p>}
+      {feelsLike && (
+        <>
+          <p>Ощущается днем: {feelsLike.day.toFixed(1)}°C</p>
+          <p>Ощущается ночью: {feelsLike.night.toFixed(1)}°C</p>
+          <p>Ощущается вечером: {feelsLike.eve.toFixed(1)}°C</p>
+          <p>Ощущается утром: {feelsLike.morn.toFixed(1)}°C</p>
+        </>
+      )}
     </div>
   );
 };

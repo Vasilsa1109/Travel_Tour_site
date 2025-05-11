@@ -12,6 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+:root {
+  --bg-color: #198754; 
+  --text-color: black;
+}
+
+.dark {
+  --bg-color: #192422;
+  --text-color: #f2f2f2;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
 *{
   padding: 0;
   margin: 0;

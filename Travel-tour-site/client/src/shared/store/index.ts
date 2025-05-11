@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
+import themeReducer from '@/features/theme/themeSlice';
 import userReducer from './userSlice';
 
 export const store = configureStore({
   reducer: {
     user: userReducer,
+    theme: themeReducer,
   },
 });
 

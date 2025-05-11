@@ -25,5 +25,6 @@
       "@shared/*": ["shared/*"]
     }
   },
-  "include": ["src", "../server/features/auth/service"]
+  "include": ["src", "../server/features/auth/service"],
+  "exclude": ["node_modules"]
 }

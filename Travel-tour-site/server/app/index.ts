@@ -15,7 +15,7 @@ app.use(express.json());
 // Роуты
 // Роуты
 app.use('/api/reviews', reviewRoutes);
-app.use('api/registation', registrationRoutes);
+app.use('/api/registration', registrationRoutes);
 app.use('/api', LoginRouter);
 // Middleware - глобальная обработка ошибок 
 app.use(errorHandler);
