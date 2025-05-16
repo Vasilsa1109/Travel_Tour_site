@@ -1,8 +1,9 @@
+
 .login__block{
     background-color: #266d54;
     padding: 15px;
-    width: 800px;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border-radius: 40px;
 }
 

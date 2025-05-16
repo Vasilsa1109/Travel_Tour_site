@@ -5,7 +5,24 @@ import { DestinationItem } from "@shared/ui/DestinationItem";
 import { WeatherInfo } from "../../WeatherInfo";
 import { useSelector } from "react-redux";
 import { RootState } from "@shared/store";
-
+import { BlockContainer } from "@shared/ui/BlockContainer";
+const cities = [
+  "Доха",
+  "Москва",
+  "Дубай",
+  "Рим",
+  "Париж",
+  "Мадрид",
+  "Стамбул",
+  "Лондон",
+  "Берлин",
+  "Бангкок",
+  "Амстердам",
+  "Афины",
+  "Дублин",
+  "Цюрих",
+  "Минск"
+];
 export const HomePage = () => {
   const user = useSelector((state: RootState) => state.user.user);
   return (
@@ -30,16 +47,9 @@ export const HomePage = () => {
         </h3>
         <h2>Explore weather in popular destinations:</h2>
         <div className="weather">
-          <WeatherInfo city="Доха" />
-          <WeatherInfo city="Москва" />
-          <WeatherInfo city="Дубай" />
-          <WeatherInfo city="Рим" />
-          <WeatherInfo city="Париж" />
-          <WeatherInfo city="Мадрид" />
-          <WeatherInfo city="Стамбул" />
-          <WeatherInfo city="Лондон" />
-          <WeatherInfo city="Берлин" />
-          <WeatherInfo city="Бангкок" />
+          {cities.map((city, index) => (
+            <WeatherInfo key={index} city={city} />
+          ))}
         </div>
         <div className="cards">
           <Card
@@ -67,6 +77,15 @@ export const HomePage = () => {
             title="Woman standing near Colosseum, Rome"
             duration="3 days 2 nights - Couple"
             price={"43.0"}
+            onBookClick={() => alert("Booking clicked")}
+          />
+            <Card
+            rating={"4.8"}
+            imgSrc="https://revelo.vercel.app/assets/images/destinations/visiting-place4.jpg"
+            location=" Dubai, UAE"
+            title="Woman standing near Colosseum, Rome"
+            duration="3 days 2 nights - Couple"
+            price={"48.0"}
             onBookClick={() => alert("Booking clicked")}
           />
         </div>
@@ -102,44 +121,10 @@ export const HomePage = () => {
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination6.jpg"
           title="Milos, Greece"
           tours="5352+ tours & 856+ Activity"
+          id="last-img-destination"
         />
       </div>
-      <div className="container-app">
-        <h2>We Are Available On the Store Get Our Mobile Apps Very Easily</h2>
-        <h4>
-          We go above and beyond to make your travel dreams a reality. Trust us
-          to handle the details so you can creating unforgettable memories.
-          Explore the world with confidence
-        </h4>
-        <ul className="specializing">
-          <li>Experience Agency</li>
-          <li>Professional Team</li>
-          <li>Low Cost Travel</li>
-          <li>Online Support 24/7</li>
-        </ul>
-        <div className="google-play-app-store">
-          <div className="bg">
-            <img
-              src="https://revelo.vercel.app/assets/images/mobile-app/phone-bg.png"
-              alt=""
-            />
-          </div>
-          <img
-            src="https://revelo.vercel.app/assets/images/mobile-app/g-play.jpg"
-            alt="Google Play"
-          ></img>
-          <img
-            src="https://revelo.vercel.app/assets/images/mobile-app/a-store.jpg"
-            alt="App Store"
-          ></img>
-          <img src="https://revelo.vercel.app/assets/images/mobile-app/phone2.png" alt="" />
-          <img src="https://revelo.vercel.app/assets/images/mobile-app/phone3.png" alt="" />
-        </div>
-        <img
-          src="https://revelo.vercel.app/assets/images/mobile-app/phone.png"
-          alt="Phone"
-        ></img>
-      </div>
+      <BlockContainer />
     </>
   );
 };

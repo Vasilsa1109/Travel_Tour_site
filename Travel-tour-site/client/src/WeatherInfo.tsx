@@ -72,14 +72,14 @@ export const WeatherInfo = ({ city }: WeatherInfoProps) => {
       {humidity !== null && <p>Влажность: {humidity}%</p>}
       {sunrise !== null && <p>Восход солнца: {formatTime(sunrise)}</p>}
       {sunset !== null && <p>Закат солнца: {formatTime(sunset)}</p>}
-      {feelsLike && (
+      {/* {feelsLike && (
         <>
           <p>Ощущается днем: {feelsLike.day.toFixed(1)}°C</p>
           <p>Ощущается ночью: {feelsLike.night.toFixed(1)}°C</p>
           <p>Ощущается вечером: {feelsLike.eve.toFixed(1)}°C</p>
           <p>Ощущается утром: {feelsLike.morn.toFixed(1)}°C</p>
         </>
-      )}
+      )} */}
     </div>
   );
 };

@@ -1,25 +1,70 @@
-.exploring, .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;   
+.exploring,
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
+.discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.exploring {
+  background-color: rgb(35, 55, 82);
+}
+.weather {
+  background-color: #465f43;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.weather__card {
+  border: 5px solid rgb(98, 133, 94);
+}
+.container-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: rgb(11, 81, 11);
+  padding: 30px;
+}
+.google-play-app-store {
+  position: relative;
+  width: 800px;
+  height: 800px;
 }
 
-.exploring{
-    background-color: rgb(35, 55, 82);
-    width: max-content;
-}
-.weather{
-    background-color: #465f43;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-.weather__card{
-    border: 5px solid  rgb(98, 133, 94)
+.google-play-app-store .bg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
-.container-app{
-    width: 83%;
-    z-index: -1;
-    position: absolute;
-    left: 6%;
-    bottom: 0;
+.google-play-app-store .phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+img[src*="phone2.png"] {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3;
+}
+img[src*="phone3.png"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+#last-img-destination {
+  width: 670px;
 }
