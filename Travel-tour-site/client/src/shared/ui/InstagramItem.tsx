@@ -12,6 +12,7 @@ export const InstagramItem: FC<InstagramItemProps> = ({
   return (
     <div
       className="insta__item"
+      data-aos="fade-up"
     >
         <img src={imgSrc} alt={alt} />
     </div>

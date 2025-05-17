@@ -50,16 +50,36 @@ export const AboutPage = () => {
                         </div>
                     </div>
                     <div className="reasons">
-                        <h2>Travel with Confidence Top Reasons to Choose Our Agency</h2>
-                        <p>We work closely with our clients to understand challenges and <br /> objectives, providing customized solutions to enhance efficiency boost profitability,
-                            and foster sustainable growth.</p>
-                        <div className="circle">
-                            <Button>Popular Destination</Button>
-                            <b>3k+</b>
+                        <div className="reasons__description">
+                            <h2>Travel with Confidence Top Reasons to Choose Our Agency</h2>
+                            <p>We work closely with our clients to understand challenges and <br /> objectives, providing customized solutions to enhance efficiency boost profitability,
+                                and foster sustainable growth.</p>
+                            <div className="reasons__circles">
+                                <div className="circle">
+                                    <Button>Popular Destination</Button>
+                                    <b>3k+</b>
+                                </div>
+                                <div className="circle">
+                                    <Button>Satisfied Clients</Button>
+                                    <b>9m+</b>
+                                </div>
+                                <div className="circle">
+                                    <Button>We have  experience</Button>
+                                    <b> 25 Years</b>
+                                </div>
+                            </div>
                         </div>
-                        <div className="circle">
-                            <Button>Satisfied Clients</Button>
-                            <b>9m+</b>
+                        <div className="about-us-image">
+                            <div className="orbit-container">
+                                <div className="shape"><img src="https://revelo.vercel.app/assets/images/about/shape1.png" alt="Shape" /></div>
+                                <div className="shape"><img src="https://revelo.vercel.app/assets/images/about/shape2.png" alt="Shape" /></div>
+                                <div className="shape"><img src="https://revelo.vercel.app/assets/images/about/shape3.png" alt="Shape" /></div>
+                                <div className="shape"><img src="https://revelo.vercel.app/assets/images/about/shape4.png" alt="Shape" /></div>
+                                <div className="shape"><img src="https://revelo.vercel.app/assets/images/about/shape5.png" alt="Shape" /></div>
+                                <div className="shape"><img src="https://revelo.vercel.app/assets/images/about/shape6.png" alt="Shape" /></div>
+                                <div className="shape"><img src="https://revelo.vercel.app/assets/images/about/shape7.png" alt="Shape" /></div>
+                            </div>
+                            <img src="https://revelo.vercel.app/assets/images/about/about.png" alt="About" className="about-center" />
                         </div>
                         <Button>Explore destinations →</Button>
                     </div>

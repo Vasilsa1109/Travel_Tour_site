@@ -1,0 +1,14 @@
+.blog__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.widget-man{
+    background: #1c231f;
+    max-width: max-content;
+}
+.widget-man a:hover{
+    color: rgb(59, 116, 94);
+}

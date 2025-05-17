@@ -88,6 +88,24 @@ export const HomePage = () => {
             price={"48.0"}
             onBookClick={() => alert("Booking clicked")}
           />
+                <Card
+            rating={"4.8"}
+            imgSrc="https://revelo.vercel.app/assets/images/destinations/visiting-place4.jpg"
+            location=" Dubai, UAE"
+            title="Woman standing near Colosseum, Rome"
+            duration="3 days 2 nights - Couple"
+            price={"48.0"}
+            onBookClick={() => alert("Booking clicked")}
+          />
+                <Card
+            rating={"4.8"}
+            imgSrc="https://revelo.vercel.app/assets/images/destinations/visiting-place4.jpg"
+            location=" Dubai, UAE"
+            title="Woman standing near Colosseum, Rome"
+            duration="3 days 2 nights - Couple"
+            price={"48.0"}
+            onBookClick={() => alert("Booking clicked")}
+          />
         </div>
       </div>
       <p>Explore Popular Destinations</p>
@@ -96,32 +114,38 @@ export const HomePage = () => {
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination1.jpg"
           title="Thailand beach"
           tours="5352+ tours & 856+ Activity"
+          data-aos="flip-left"
         />
         <DestinationItem
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination3.jpg"
           title="Castellammare del Golfo, Italy"
           tours="5352+ tours & 856+ Activity"
+          data-aos="flip-up"
         />
         <DestinationItem
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination2.jpg"
           title="Parga, Greece"
           tours="5352+ tours & 856+ Activity"
+          data-aos="flip-right"
         />
         <DestinationItem
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination4.jpg"
           title="Reserve of Canada, Canada"
           tours="5352+ tours & 856+ Activity"
+          data-aos="zoom-in-left"
         />
         <DestinationItem
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination5.jpg"
           title="Dubai united states"
           tours="5352+ tours & 856+ Activity"
+          data-aos="fade-up"
         />
         <DestinationItem
           imgSrc="https://revelo.vercel.app/assets/images/destinations/destination6.jpg"
           title="Milos, Greece"
           tours="5352+ tours & 856+ Activity"
           id="last-img-destination"
+          data-aos="zoom-in-right"
         />
       </div>
       <BlockContainer />

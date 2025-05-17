@@ -23,7 +23,7 @@ export const Card: FC<CardProps> = ({
   onBookClick,
 }) => {
   return (
-    <div className="destination-card">
+    <div className="destination-card" data-aos="flip-up" >
       <div className="image">
         <div className="ratting">
           <img

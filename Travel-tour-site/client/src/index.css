@@ -15,15 +15,18 @@
 :root {
   --bg-color:#198754; 
   --text-color: black;
-  --button-color: #63ab45;
+  --button-bg: #63ab45;
+  --registration: rgb(185, 255, 175);
+  --login-bg: #266d54;
 }
 
 html.dark {
   --bg-color: #07160e;
   --text-color: #f2f2f2;
-  --button-color: #2b2c12;
+  --button-bg: #0a221d;
+  --registration: #172b13;
+  --login-bg: #2f5c4c;
 }
-
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -38,8 +41,13 @@ a {
   color: #6eff69;
   text-decoration: inherit;
 }
-
-
+.form__registration{
+    background-color: var(--registration);
+    padding: 30px;
+}
+.login__block{
+  background-color: var(--login-bg);
+}
 main{
   margin-top: 130px;
   margin-bottom: 300px;
@@ -58,21 +66,16 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  background-color: var(--button-color);
+  background-color: var(--button-bg);
+  color: #ffffff;
 }
 button:hover {
-  border-color: #9ea79a;
+  border-color: #dde6da;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-@media (prefers-color-scheme: light) {
-  a:hover {
+ a:hover {
     color: #112716;
   }
-  button {
-    background-color: #63ab45;
-  }
-}

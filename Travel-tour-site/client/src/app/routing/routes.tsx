@@ -7,6 +7,7 @@ import { ErrorPage } from "@pages/ErrorPage/ErrorPage";
 import { AboutPage } from "@pages/about/ui/AboutPage";
 import { Contact } from "@pages/contact/Contact";
 import { DestinationsPage } from "@pages/destinations/ui/DestinationsPage";
+import { BlogPage } from "@pages/blog/ui/BlogPage";
 
 
 export const router = createBrowserRouter([
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
         {
             path: 'destinations',
             element: <DestinationsPage />,
+        },
+         {
+            path: 'blog',
+            element: <BlogPage />,
         },
         {
             path: '*',

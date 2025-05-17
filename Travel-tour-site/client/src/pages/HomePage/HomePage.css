@@ -14,6 +14,7 @@
 }
 .exploring {
   background-color: rgb(35, 55, 82);
+  max-width: 1920px;
 }
 .weather {
   background-color: #465f43;
@@ -66,5 +67,5 @@ img[src*="phone3.png"] {
   z-index: 3;
 }
 #last-img-destination {
-  width: 670px;
+  width: max-content;
 }
