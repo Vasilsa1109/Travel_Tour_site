@@ -1,15 +1,18 @@
+
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { Button } from "@shared/ui/Button";
 import { ThemeToggle } from "@shared/ui/ThemeToggle";
+import { TranslateComponent } from "../Translate/GoogleTranslate";
+
 export const Header = () => {
   return (
-    <header className="header"> 
-    <ThemeToggle />
+    <header className="header">
+      <ThemeToggle />
       <div>
         <img
           src="https://cdn-icons-png.flaticon.com/512/5333/5333722.png"
-          alt=""
+          alt="Logo"
           id="logo"
         />
         <Link to="/" className="link">
@@ -35,8 +38,9 @@ export const Header = () => {
             Blog
           </Link>
         </nav>
+        <TranslateComponent />
       </div>
-      
+
       <Button id="booking">
         <Link to="/contact" className="link">
           BOOK NOW ↗
