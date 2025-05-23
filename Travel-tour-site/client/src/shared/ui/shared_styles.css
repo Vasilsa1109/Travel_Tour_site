@@ -77,3 +77,19 @@
     height: 25px;
 }
 
+.destination-card h3{
+    margin-top: 10px;
+    color: black;
+    font-style: italic;
+    font-size: large;
+    box-shadow: 0 10px 30px rgba(115, 156, 105, 0.25);
+}
+.destination-footer{
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* display: flex;
+   justify-content: center;
+   gap: 30px; */
+}

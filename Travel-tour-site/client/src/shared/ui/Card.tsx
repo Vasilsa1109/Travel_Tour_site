@@ -8,7 +8,8 @@ interface CardProps {
   title: string;
   duration?: string;
   price: string;
-  hotelDescription?: string;
+  guests?: string;
+  Description?: string;
   onBookClick?: () => void;
 }
 
@@ -19,11 +20,12 @@ export const Card: FC<CardProps> = ({
   title,
   duration,
   price,
-  hotelDescription,
+  guests,
+  Description,
   onBookClick,
 }) => {
   return (
-    <div className="destination-card" data-aos="flip-up" >
+    <div className="destination-card" data-aos="flip-up">
       <div className="image">
         <div className="ratting">
           <img
@@ -47,18 +49,35 @@ export const Card: FC<CardProps> = ({
               src="https://cdn-icons-png.flaticon.com/512/535/535239.png"
               alt=""
               className="icon__img"
-            />{" "}
-            {location}
+            />
+           &nbsp; {location}
           </span>
-          <h5>
-            <a href="destination-details">{title}</a>
-          </h5>
-          <span className="time">{duration}</span>
+          <h3>{title}</h3>
         </div>
-        <div className="hotel">
-          <h6>{hotelDescription}</h6>
-        </div>
+
         <div className="destination-footer">
+          <div className="time__guest">
+            <span className="time">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOU9J_mAEjygC57MP9GUYukXkthOFAWfLxJEsYyQIhbnf-rxd9Kv20gPqkOHM5pmHiV7s&usqp=CAU"
+                alt=""
+                className="time__img"
+              />
+              &nbsp;  {duration}
+            </span>
+            <br />
+            <span>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4519/4519678.png"
+                alt=""
+                className="guest__img"
+              />
+              {guests} &nbsp; guests
+            </span>
+          </div>
+          <div className="hotel">
+            <h5>{Description}</h5>
+          </div>
           <span className="price">
             <span>${price}</span>/per person
           </span>
@@ -69,7 +88,7 @@ export const Card: FC<CardProps> = ({
               onBookClick && onBookClick();
             }}
           >
-            Book Now 
+            BOOK NOW &nbsp; 
             <img
               src="https://cdn-icons-png.flaticon.com/512/1/1122.png"
               alt=""

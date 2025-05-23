@@ -12,6 +12,7 @@ import { ErrorPage } from '@pages/ErrorPage/ErrorPage'
 import { Contact } from '@pages/contact/Contact'
 import { DestinationsPage } from '@pages/destinations/ui/DestinationsPage'
 import { BlogPage } from '@pages/blog/ui/BlogPage'
+import { ToursPage } from '@pages/tours/ui/ToursPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/destinations" element={<DestinationsPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/tours" element={<ToursPage />} />
         <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

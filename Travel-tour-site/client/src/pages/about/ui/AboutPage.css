@@ -1,205 +1,208 @@
 .description {
-    background-color: #2e3b15;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  background-color: #2e3b15;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.reasons{
-    padding: 30px;
-    margin-top: 40px;
-    background: #273f33;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.reasons {
+  padding: 30px;
+  margin-top: 40px;
+  background: #273f33;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.reasons__circles{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
+.reasons__circles {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 .circle {
-    background-color: aliceblue;
-    width: 150px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    position: relative;
+  background-color: aliceblue;
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
 }
-.circle b{
-    font-size: 20px;
+.circle b {
+  font-size: 20px;
 }
 
 .circle button {
-    position: absolute;
-    top: 20px;
-    right: -20px;
-    font-size: 10px;
-    background-color: #a34316;
-    transform: rotate(30deg);
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  font-size: 10px;
+  background-color: #a34316;
+  transform: rotate(30deg);
 }
 
 .circle h5 {
-    position: absolute;
-    left: 30px;
-    top: 20px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
 }
 
 .specializing li {
-    background-color: rgb(53, 136, 64);
+  background-color: rgb(53, 136, 64);
 }
 
 .specializing button {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .specializing li::before {
-    list-style-position: inside;
+  list-style-position: inside;
 }
 
 .specializing li::marker {
-    --image: '📩 ';
-    content: var(--image);
+  --image: "📩 ";
+  content: var(--image);
 }
 
 ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .block {
-    background-color: #6b4f30;
-    color: aliceblue;
-    border-radius: 10px;
+  background-color: #6b4f30;
+  color: aliceblue;
+  border-radius: 10px;
 }
 
 .block img {
-    width: 50px;
-    aspect-ratio: 1/1;
+  width: 50px;
+  aspect-ratio: 1/1;
 }
 
 .company {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 30px;
 }
 
 .sub-block {
-    background-color: rgb(70, 50, 25);
+  background-color: rgb(70, 50, 25);
 }
 
 #reward {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 b {
-    color: black;
+  color: black;
 }
 
 .tour-guides {
-    display: flex;
-    padding: 40px;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .guide img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
-
 .about-us-image {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    margin: 0 auto;
-    z-index: 1;
-    padding: 5%;
-    border-radius: 50%;
-    border: 1px solid #e9e9e9;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 5%;
+  border-radius: 50%;
+  border: 1px solid #e9e9e9;
 }
 
 .about-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    width: 200px;
-    height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 200px;
+  height: auto;
 }
 
-
-
 .orbit-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin-top: -200px;
-    margin-left: -200px;
-    animation: rotateOrbit 20s linear infinite;
-    transform-origin: 50% 50%;
-    z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  animation: rotateOrbit 20s linear infinite;
+  transform-origin: 50% 50%;
+  z-index: 5;
 }
 
 .shape {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 50%;
-    left: 50%; 
-    margin: -30px 0 0 -30px;
-    background: #fff;
-    line-height: 65px;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 0 10px 30px hsla(0, 0%, 72%, .25);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -30px;
+  background: #fff;
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 10px 30px hsla(0, 0%, 72%, 0.25);
 }
 
-
 .shape:nth-child(1) {
-    transform: rotate(calc(360deg / 7 * 0)) translate(180px) rotate(calc(-360deg / 7 * 0));
+  transform: rotate(calc(360deg / 7 * 0)) translate(180px)
+    rotate(calc(-360deg / 7 * 0));
 }
 
 .shape:nth-child(2) {
-    transform: rotate(calc(360deg / 7 * 1)) translate(180px) rotate(calc(-360deg / 7 * 1));
+  transform: rotate(calc(360deg / 7 * 1)) translate(180px)
+    rotate(calc(-360deg / 7 * 1));
 }
 
 .shape:nth-child(3) {
-    transform: rotate(calc(360deg / 7 * 2)) translate(180px) rotate(calc(-360deg / 7 * 2));
+  transform: rotate(calc(360deg / 7 * 2)) translate(180px)
+    rotate(calc(-360deg / 7 * 2));
 }
 
 .shape:nth-child(4) {
-    transform: rotate(calc(360deg / 7 * 3)) translate(180px) rotate(calc(-360deg / 7 * 3));
+  transform: rotate(calc(360deg / 7 * 3)) translate(180px)
+    rotate(calc(-360deg / 7 * 3));
 }
 
 .shape:nth-child(5) {
-    transform: rotate(calc(360deg / 7 * 4)) translate(180px) rotate(calc(-360deg / 7 * 4));
+  transform: rotate(calc(360deg / 7 * 4)) translate(180px)
+    rotate(calc(-360deg / 7 * 4));
 }
 
 .shape:nth-child(6) {
-    transform: rotate(calc(360deg / 7 * 5)) translate(180px) rotate(calc(-360deg / 7 * 5));
+  transform: rotate(calc(360deg / 7 * 5)) translate(180px)
+    rotate(calc(-360deg / 7 * 5));
 }
 
 .shape:nth-child(7) {
-    transform: rotate(calc(360deg / 7 * 6)) translate(180px) rotate(calc(-360deg / 7 * 6));
+  transform: rotate(calc(360deg / 7 * 6)) translate(180px)
+    rotate(calc(-360deg / 7 * 6));
 }
 
 @keyframes rotateOrbit {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
-

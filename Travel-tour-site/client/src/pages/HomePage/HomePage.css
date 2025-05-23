@@ -22,7 +22,8 @@
   grid-template-columns: repeat(5, 1fr);
 }
 .weather__card {
-  border: 5px solid rgb(98, 133, 94);
+  box-shadow: 0 10px 30px  rgb(18, 47, 15);
+  padding: 30px;
 }
 .container-app {
   display: flex;
@@ -70,4 +71,7 @@ img[src*="phone3.png"] {
   width: max-content;
 }
 
-
+.cards-main{
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+}

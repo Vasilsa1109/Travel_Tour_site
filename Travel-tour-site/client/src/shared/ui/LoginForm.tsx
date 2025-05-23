@@ -8,11 +8,10 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setUser } from '@shared/store/userSlice';
 
-
 //схема валидации
 const loginSchema = z.object({
   email: z.string().email('Invalid email'),
-  password: z.string().min(8, 'Password must be at least 8 characters'),
+  password: z.string().min(6, 'Password must be at least 6 characters'),
 });
 
 type LoginFormValues = z.infer<typeof loginSchema>;
@@ -29,6 +28,7 @@ export const LoginForm = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
+
   const onSubmit = async (data: LoginFormValues) => {
     try {
       setLoading(true);
@@ -56,31 +56,30 @@ export const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="CLASS__NAME">
-      <div>
-        <label>Email</label>
-        <Input
-          type="email"
-          {...register('email')}
-          className="CLASS__NAME"
-        />
-        {errors.email && <p>{errors.email.message}</p>}
-      </div>
+<form onSubmit={handleSubmit(onSubmit)} className="loginForm">
+<div className='emailBlock'>
+  <label>Email</label>
+  <Input
+    type="email"
+    {...register('email')}
+    className="CLASS__NAME"
+  />
+  {errors.email && <p>{errors.email.message}</p>}
+</div>
 
-      <div>
-        <label>Password</label>
-        <Input
-          type="password"
-          {...register('password')}
-          className="CLASS__NAME"
-        />
-        {errors.password && <p>{errors.password.message}</p>}
-      </div>
+<div>
+  <label>Password</label>
+  <Input
+    type="password"
+    {...register('password')}
+    className="CLASS__NAME"
+  />
+  {errors.password && <p>{errors.password.message}</p>}
+</div>
 
-      <Button type="submit" disabled={loading}>
-        {loading ? 'Logging in...' : 'Login'}
-      </Button>
-    </form>
+<Button type="submit" disabled={loading}>
+  {loading ? 'Logging in...' : 'Login'}
+</Button>
+</form>
   );
 };
-

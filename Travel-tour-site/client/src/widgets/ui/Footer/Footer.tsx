@@ -121,7 +121,7 @@ export const Footer = () => {
           <div className="col-lg-5">
             <div className="copyright-text text-center text-lg-start">
               <p>
-                © Linkopy 202/4 <a href="/">Ravelo</a>, All rights reserved
+                © Linkopy 2025 <a href="/">Tour & travel</a>, All rights reserved
               </p>
               <ul className="footer-bottom-nav">
                 <li>

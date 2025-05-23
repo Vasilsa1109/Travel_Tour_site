@@ -51,7 +51,7 @@ export const HomePage = () => {
             <WeatherInfo key={index} city={city} />
           ))}
         </div>
-        <div className="cards">
+        <div className="cards cards-main">
           <Card
             rating={"4.9"}
             imgSrc="https://revelo.vercel.app/assets/images/destinations/visiting-place1.jpg"

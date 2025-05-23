@@ -21,8 +21,7 @@ export const AboutPage = () => {
 
                         <div className="circle">
                             <Button>Years of experience</Button>
-                            <h5>We have</h5>
-                            <b>28+</b>
+                            <b>We have 28+</b>
                         </div>
                         <div className="description__specializing">
                             <p>We specialize in crafting unforgettable city experiences for travelers seeking discover the heart and soul of urban landscapes.
