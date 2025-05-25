@@ -29,7 +29,7 @@ export const ToursPage = () => {
             price={"386.00"}
             onBookClick={() => alert("Booking clicked")}
           />
-           <Card
+          <Card
             rating={"4.7"}
             imgSrc="https://revelo.vercel.app/assets/images/destinations/tour-list4.jpg"
             location="Switzerland"
@@ -39,7 +39,7 @@ export const ToursPage = () => {
             price={"386.00"}
             onBookClick={() => alert("Booking clicked")}
           />
-           <Card
+          <Card
             rating={"4.6"}
             imgSrc="https://revelo.vercel.app/assets/images/destinations/tour-list5.jpg"
             location="Tours, France"
@@ -49,6 +49,27 @@ export const ToursPage = () => {
             price={"386.00"}
             onBookClick={() => alert("Booking clicked")}
           />
+        </div>
+        <div className="subscribe__block">{/* background-image: url(https://revelo.vercel.app/assets/images/newsletter/newsletter-bg-lines.png); */}
+          <div className="col">
+            <div className="newsletter-content-part aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-offset="50">
+              <div className="section-title"><h2>Subscribe Our Newsletter to Get more offer & Tips</h2>
+                <p>One site  34,500  most popular experience you’ll remember</p></div>
+              <form className="newsletter-form mb-15" action="/">
+                <div className="text-field">
+                  <label className="text-field__label" htmlFor="email">Email</label>
+                  <div className="text-field__icon text-field__icon_email">
+                    <input className="text-field__input" type="email" placeholder="Email Address" />
+                  </div>
+                </div>
+                <Button type="submit" className="theme-btn bgc-secondary style-two">
+                  <span>Subscribe</span>
+                </Button>
+              </form>
+              <p>No credit card requirement. <br /> No commitments</p></div>
+            <div className="newsletter-bg-image aos-init" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1500" data-aos-offset="50">
+              <img src="https://revelo.vercel.app/assets/images/newsletter/newsletter-bg-image.png" alt="Newsletter" /></div></div>
+          <div className="newsletter-bg aos-init aos-animate" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50"></div>
         </div>
       </main>
       <Footer />

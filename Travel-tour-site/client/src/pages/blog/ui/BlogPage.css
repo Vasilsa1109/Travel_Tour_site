@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
+    margin: 30px;
 }
 .widget-man{
     background: #1c231f;

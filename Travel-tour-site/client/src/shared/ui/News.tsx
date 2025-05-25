@@ -44,7 +44,7 @@ export const News = () => (
           </div>
           <div className="content">
             <h6><a href={link}>{title}</a></h6>
-            <span className="date"><i className="far fa-calendar-alt"></i> {date}</span>
+            <span className="date"> {date}</span>
           </div>
         </li>
       ))}

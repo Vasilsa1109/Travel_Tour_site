@@ -123,6 +123,11 @@ export const Footer = () => {
               <p>
                 © Linkopy 2025 <a href="/">Tour & travel</a>, All rights reserved
               </p>
+              <p>
+                Developed by Vasilisa V (2025)
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="" style={{ maxWidth: 30, marginLeft: 30 }} />
+                <a href="https://github.com/Vasilsa1109" target="_blank"> See my Git</a>
+              </p>
               <ul className="footer-bottom-nav">
                 <li>
                   <a href="about">Terms</a>

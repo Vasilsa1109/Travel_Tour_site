@@ -1,14 +1,19 @@
-.mini-cards{
+.mini-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-   
+    text-align: center !important
 }
-.mini-card{
-    background-color: #1e5c3f; 
+
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e5c3f;
     padding: 20px;
 }
-.mini-card img{
+
+.mini-card img {
     margin: 10px;
     overflow: hidden;
     position: relative;
