@@ -2,24 +2,28 @@ import { FC } from "react";
 
 interface MiniCardProps {
   imgSrc: string;
-  country: string;
-  tours: number;
+  title: string;
+  date: string;
+  commets: number;
   onShowDetails: () => void;
 }
 
-export const MiniCard: FC<MiniCardProps> = ({
+export const BlogsNewsCard: FC<MiniCardProps> = ({
   imgSrc,
-  country,
-  tours,
+  title,
+  date,
+  commets,
   onShowDetails,
 }) => {
   return (
     <div className="mini-card"  data-aos="fade-down">
-      <img src={imgSrc} alt={country}  />
-      <h3>{country}</h3>
-      <h4>{tours} tours</h4>
+        <button>Travel</button>
+      <img src={imgSrc}  />
+      <h2>{title}</h2>
+      <h3>{date}</h3>
+      <h4>{commets} comments</h4>
       <button onClick={onShowDetails} style={{ cursor: "pointer", padding: "8px 12px", marginTop: 10 }}>
-        Посмотреть отзывы
+       Read more
       </button>
     </div>
   );

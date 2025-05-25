@@ -9,8 +9,11 @@ interface Review {
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  country: string;
-  description: string;
+  country?: string;
+  description?: string;
+  title?: string;
+  imgSrc?: string;
+  date?: string;
   reviews: Review[];
 }
 

@@ -48,7 +48,12 @@
   left: 30px;
   top: 20px;
 }
-
+.travel-box-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 30px;
+}
 .specializing li {
   background-color: rgb(53, 136, 64);
 }

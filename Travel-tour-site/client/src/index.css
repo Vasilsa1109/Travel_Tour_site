@@ -17,9 +17,28 @@
   --text-color: black;
   --button-bg: #63ab45;
   --registration: rgba(25, 47, 24, 0.806);
-  --login-bg: #266d54;
+  --login-bg: #266d54; 
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
 }
 
+.theme-dark {
+  --bg-color: #1c1c1c;
+  --text-color: #f2f2f2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 html.dark {
   --bg-color: #07160e;
   --text-color: #f2f2f2;
