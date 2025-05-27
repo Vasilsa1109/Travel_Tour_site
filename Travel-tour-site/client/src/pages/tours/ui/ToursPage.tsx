@@ -67,9 +67,9 @@ export const ToursPage = () => {
                 </Button>
               </form>
               <p>No credit card requirement. <br /> No commitments</p></div>
-            <div className="newsletter-bg-image aos-init" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1500" data-aos-offset="50">
+            <div className="newsletter-bg-image aos-init" data-aos="zoom-in-up">
               <img src="https://revelo.vercel.app/assets/images/newsletter/newsletter-bg-image.png" alt="Newsletter" /></div></div>
-          <div className="newsletter-bg aos-init aos-animate" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50"></div>
+          <div className="newsletter-bg aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50"></div>
         </div>
       </main>
       <Footer />

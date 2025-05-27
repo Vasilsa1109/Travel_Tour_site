@@ -29,7 +29,8 @@ export const HomePage = () => {
     <>
       <h1>Home</h1>
       <div>
-        {user ? <p>Привет, {user.name}!</p> : <p>Вы не вошли в систему</p>}
+         {user ? <p>Успешный вход в систему!</p> : <p>Вы не вошли в систему</p>}
+         {/*, {user.name}! */}
       </div>
       <div className="main_block">
         <h1>TOUR & TRAVEL</h1>

@@ -61,6 +61,7 @@ a {
   text-decoration: inherit;
 }
 .form__registration{
+  
     background-color: var(--registration);
     padding: 30px;
 }
@@ -96,5 +97,5 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
  a:hover {
-    color: #112716;
+    color: #88ff00;
   }

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import { Button } from "@shared/ui/Button";
 import { ThemeToggle } from "@shared/ui/ThemeToggle";
-import { TranslateComponent } from "../Translate/GoogleTranslate";
 
 export const Header = () => {
   return (
@@ -38,7 +37,6 @@ export const Header = () => {
             Blog
           </Link>
         </nav>
-        <TranslateComponent />
       </div>
 
       <Button id="booking">

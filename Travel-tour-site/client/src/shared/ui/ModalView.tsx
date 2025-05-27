@@ -14,7 +14,8 @@ interface ModalProps {
   title?: string;
   imgSrc?: string;
   date?: string;
-  reviews: Review[];
+  commets?: number;
+  reviews?: Review[];
 }
 
 export const Modal: FC<ModalProps> = ({ isOpen, onClose, country, description, reviews }) => {

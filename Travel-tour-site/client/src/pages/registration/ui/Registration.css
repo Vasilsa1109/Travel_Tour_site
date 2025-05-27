@@ -1,9 +1,12 @@
-.registration {
+.registration{
     border-radius: 10px;
     height: 100%;
+}
+.registration, .form__registration{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 40px;
 }
 .registration button{
     margin-top: 30px; 
